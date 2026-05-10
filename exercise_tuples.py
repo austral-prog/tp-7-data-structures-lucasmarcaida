@@ -1,21 +1,5 @@
 # Ejercicios de tuplas: búsqueda del tesoro pirata
-# Lista de Azara:
-#
-# Tesoro	Coordenada
-# Amethyst Octopus	1F
-# Angry Monkey Figurine	5B
-# Antique Glass Fishnet Float	3D
-# Brass Spyglass	4B
-# Carved Wooden Elephant	8C
-# Lista de Rui:
-#
-# Ubicación	Coordenada	Cuadrante
-# Seaside Cottages	("1", "C")	Blue
-# Aqua Lagoon (Island of Mystery)	("1", "F")	Yellow
-# Abandoned Lighthouse	("4", "B")	Blue
-# Stormy Breakwater	("5", "B")	Purple
-# Foggy Seacave	("8", "C")	Purple
-# Las coordenadas de Azara y Rui están con formatos distintos. Ayudá a organizarlas.
+
 
 def get_coordinate(registro):
     """
@@ -27,7 +11,7 @@ def get_coordinate(registro):
     Returns:
         Un string con la coordenada del mapa
     """
-    return registro [1]
+    pass  # Reemplazar con tu implementación
 
 
 def convert_coordinate(coordenada):
@@ -40,7 +24,7 @@ def convert_coordinate(coordenada):
     Returns:
         Una tupla con los componentes individuales (ej: ("2", "A"))
     """
-    return (coordenada[:-1], coordenada[-1])
+    pass  # Reemplazar con tu implementación
 
 
 def create_record(registro_azara, registro_rui):
@@ -63,13 +47,7 @@ def create_record(registro_azara, registro_rui):
     Returns:
         Tupla combinada si las coordenadas coinciden, o "not a match" si no.
     """
-    azara = (registro_azara[1][0], registro_azara[1][1])
-    rui = (registro_rui[1][0], registro_rui[1][1])
-    if azara == rui:
-        return ((registro_azara[0], registro_azara[1], registro_rui[0], registro_rui[1], registro_rui[2]))
-    else:
-        return "not a match"
-
+    pass  # Reemplazar con tu implementación
 
 
 def sum_tuple(numeros):
@@ -90,15 +68,7 @@ def sum_tuple(numeros):
         sum_tuple((1, 2, 3, 4, 5)) -> 15
         sum_tuple(()) -> 0
     """
-    if numeros == ():
-        return 0
-    else:
-        suma = 0
-        for i in numeros:
-            suma += i
-    return suma
-
-
+    pass  # Reemplazar con tu implementación
 
 
 def count_occurrences(tupla, elemento):
@@ -119,14 +89,7 @@ def count_occurrences(tupla, elemento):
         count_occurrences((1, 2, 2, 3, 2), 2) -> 3
         count_occurrences(('a', 'b', 'a'), 'c') -> 0
     """
-    suma = 0
-    for i in tupla:
-        if i == elemento:
-            suma += 1
-    return suma
-
-
-
+    pass  # Reemplazar con tu implementación
 
 
 def find_index(tupla, elemento):
@@ -148,15 +111,7 @@ def find_index(tupla, elemento):
         find_index(('a', 'b', 'c', 'b'), 'b') -> 1
         find_index((1, 2, 3), 9) -> -1
     """
-    if elemento not in tupla:
-        return -1
-    else:
-        indice = -1
-        for i in tupla:
-            indice += 1
-            if i == elemento:
-                return indice
-
+    pass  # Reemplazar con tu implementación
 
 
 def filter_positives(numeros):
@@ -174,12 +129,4 @@ def filter_positives(numeros):
         filter_positives((-3, 1, 0, 5, -2, 7)) -> (1, 5, 7)
         filter_positives((-1, -2, -3)) -> ()
     """
-    tupla = ()
-    lista = []
-    for i in numeros:
-        if i > 0:
-            lista.append(i)
-            tupla = tuple(lista)
-    return tupla
-
-
+    pass  # Reemplazar con tu implementación
